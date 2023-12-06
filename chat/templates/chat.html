@@ -6,9 +6,9 @@
     </head>
     <body>
         <h1>Chat</h1>
-        <p id="messages"></p>
+        <div id = pane><p id="messages"></p></div>
         <br><br>
-        <form onsubmit="javascript:handleClick()">
+        <form onsubmit="handleClick(event)">
             <input type="text" id="messageForm" name="fname"><br><br>
         </form>
     </body>

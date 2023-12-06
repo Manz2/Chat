@@ -1,8 +1,8 @@
 body {
     background-color: black;
     padding: 25px;
-    padding-left: 30%;
-    padding-right: 30%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 h1 {
@@ -31,6 +31,7 @@ h1 {
 #messageForm {
     position: relative;
     left: 50%;
+    width: 70%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border-radius: 25px;
@@ -38,4 +39,14 @@ h1 {
 }
 #messageForm:focus {
     outline: none !important;
+}
+#pane::-webkit-scrollbar {
+    width: 0;  /* Verstecke den Scrollbalken */
+}
+#pane {
+    scrollbar-width: none;
+    height:200px;
+    overflow-y: scroll;
+    padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+    box-sizing: content-box;
 }
