@@ -1,0 +1,41 @@
+body {
+    background-color: black;
+    padding: 25px;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#message {
+    float: left;
+    border-radius: 25px;
+    padding: 7px;
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+}
+#messageF {
+    float: right;
+    border-radius: 25px;
+    padding: 7px;
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+}
+
+#messageForm {
+    position: relative;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    padding: 7px;
+}
+#messageForm:focus {
+    outline: none !important;
+}
