@@ -15,9 +15,10 @@ h1 {
     float: left;
     border-radius: 25px;
     padding: 7px;
-    background-color: white;
+    background-color: blue;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 1000;
+    word-break: break-word;
 }
 #messageF {
     float: right;
@@ -26,6 +27,10 @@ h1 {
     background-color: white;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 1000;
+    word-break: break-word;
+}
+#outer {
+    background-color: brown;
 }
 
 #messageForm {
@@ -38,7 +43,6 @@ h1 {
     padding: 7px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 1000;
-
 }
 #messageForm:focus {
     outline: none !important;
@@ -51,5 +55,5 @@ h1 {
     height:200px;
     overflow-y: scroll;
     padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
-    box-sizing: content-box;
+    /*box-sizing: content-box;*/
 }

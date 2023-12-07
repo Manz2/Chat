@@ -23,7 +23,12 @@ function handleClick(event) {
     if (!Array.isArray(messages)) {
         messages = [];
     }
-    messages.push({ text: messageText, sender: "me" });
+    var sender = "me";
+    if(messageText.startsWith("you")) {
+        
+        sender = "you";
+    }
+    messages.push({ text: messageText, sender: sender });
 
     chat();
     messageInput.value = "";
