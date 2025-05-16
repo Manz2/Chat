@@ -1,7 +1,7 @@
-FROM python:3
-ADD chat chat
-EXPOSE 8000
-WORKDIR /chat
-# Install any needed packages specified in requirements.txt
-RUN pip install Flask==3.0.0
-ENTRYPOINT ["python3", "server.py"]
+FROM python:3.11-slim
+
+WORKDIR /app
+COPY backend/ /app
+RUN pip install --no-cache-dir -r requirements.txt
+
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
